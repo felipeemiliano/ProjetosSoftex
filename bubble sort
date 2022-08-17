@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled20.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyP6gRnnMZTuh0mD2Hha75Nq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/felipeemiliano/ProjetosSoftex/blob/main/bubble%20sort\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "JD2B4x23IlqN"
+      },
+      "outputs": [],
+      "source": [
+        "import random\n",
+        "def bubble_sort (v):\n",
+        "      fim = len (v) \n",
+        "      while fim > 0:\n",
+        "        i = 0 \n",
+        "  \n",
+        "        while i < fim-1 : \n",
+        "            if v[i] > v[i+1]:\n",
+        "                temp = v[i]\n",
+        "                v[i] = v[i+1]\n",
+        "                v[i+1] = temp\n",
+        "                print(v)\n",
+        "            i += 1\n",
+        "      fim -= 0 \n",
+        "\n",
+        "\n",
+        "vetor = list(range(0,10))\n",
+        "random.shuffle(vetor)\n",
+        "bubble_sort(vetor)"
+      ]
+    }
+  ]
+}
